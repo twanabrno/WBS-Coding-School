@@ -9,27 +9,30 @@
 
 <body>
     <header>
-        <h1>Coding School Sign Up</h1>
+        <h1>WBS Coding School Sign Up</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum suscipit error necessitatibus dolores nostrum
+            facilis, non doloremque numquam ea obcaecati voluptate magni ad iste aperiam! Obcaecati nostrum sequi illum
+            atque?</p>
     </header>
 
     <main>
         <form action="#" method="post">
             <fieldset>
-                <input type="date" id="birthday" name="birthday">
-                <legend>Sign Up Information</legend>
-
+                <legend>Sign up</legend>
+                <br>
                 <label for="name">Full Name:</label>
                 <input type="text" id="name" name="name" required>
-
+                <br><br>
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
+                <br><br>
                 <label for="phone">Telephone:</label>
-                <input type="tel" id="phone" name="phone" required>
-
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <small><i>Format: 123-456-7890</i></small>
+                <br><br>
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
-
+                <br><br>
                 <label for="bootcamp">Select Bootcamp:</label>
                 <select id="bootcamp" name="bootcamp" required>
                     <option value="" disabled selected>Select your bootcamp</option>
@@ -38,7 +41,9 @@
                     <option value="cyber-security">Cyber Security</option>
                     <option value="mobile-development">Mobile Development</option>
                 </select>
-
+                <br>
+                <br>
+                <br>
                 <button type="submit">Sign Up</button>
             </fieldset>
         </form>
