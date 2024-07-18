@@ -1,0 +1,218 @@
+:root {
+    --bg-navy: #304463;
+    --bg-blue: #7d8abc;
+    --bg-blue-op: rgba(255, 255, 255, 0.4);
+    --bg-beigy: #FFF8DB;
+    --text-white: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background: var(--bg-beigy);
+}
+
+header {
+    background: var(--bg-navy);
+    color: var(--text-white);
+    text-align: center;
+    padding: 1.5rem 0;
+    font-family: 'Panchang', sans-serif;
+}
+
+a.meet-dogs {
+    all: unset;
+    color: var(--text-white);
+    display: block;
+    text-decoration: none;
+    background-color: var(--bg-blue);
+    width: fit-content;
+    margin-inline: auto;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    margin-top: 1.75rem;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.3s;
+    text-transform: capitalize;
+}
+
+a.meet-dogs:hover {
+    transform: translateY(5px);
+}
+
+.svg {
+    height: 300px;
+}
+
+section {
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+section.bg {
+    background: var(--bg-blue);
+    color: var(--text-white);
+    border-bottom: 1px solid var(--bg-beigy);
+}
+
+section h2 {
+    color: var(--bg-blue);
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+
+section.bg h2 {
+    color: var(--text-white);
+}
+
+section p {
+    width: 50%;
+    margin-inline: auto;
+    font-size: 15px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul li:before {
+    content: '\2713';
+    color: var(--text-white);
+    margin: 0 0.5rem;
+}
+
+section ul li {
+    position: relative;
+    width: fit-content;
+    margin-inline: auto;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+form {
+    width: fit-content;
+    margin-inline: auto;
+    text-align: start;
+}
+
+form input {
+    display: block;
+    all: unset;
+    background-color: var(--bg-blue-op);
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: var(--text-white);
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+form input:focus {
+    background-color: var(--text-white);
+    color: var(--bg-navy);
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+form button {
+    all: unset;
+    display: block;
+    background-color: var(--bg-blue-op);
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: var(--text-white);
+    transition: all;
+    transition-duration: 0.2s;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: var(--text-white);
+    color: var(--bg-blue);
+}
+
+.imgs img {
+    opacity: 0.8;
+    z-index: 10;
+    position: relative;
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+.imgs img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.1);
+    z-index: 20 !important
+}
+
+footer {
+    background: var(--bg-navy);
+    color: var(--text-white);
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: x-small;
+}
+
+
+
+
+@media (max-width: 480px) {}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 16px;
+    }
+
+    section {
+        padding: 5rem 1rem;
+    }
+
+    section h2 {
+        font-size: medium;
+    }
+
+    section p {
+        width: 90%;
+    }
+
+    .svg {
+        width: 100%;
+    }
+
+    a.meet-dogs {
+        font-size: small;
+        border-radius: 50px;
+    }
+
+    .imgs img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    section p {
+        width: 80%;
+    }
+
+    .imgs img {
+        width: 40%;
+        aspect-ratio: 1;
+    }
+}
+
+@media (min-width: 1201px) {}
