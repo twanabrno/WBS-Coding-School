@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #96C7EB;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+section.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1536px;
+    background-color: #C0C0C0;
+    border-radius: 3px;
+    border: 3px solid white;
+    border-bottom-color: black;
+    border-right-color: black;
+}
+
+.title-bar {
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem 1.5rem;
+    background: rgb(13, 37, 105);
+    background: linear-gradient(90deg, rgba(13, 37, 105, 1) 0%, rgba(172, 206, 244, 1) 100%);
+}
+
+.content {
+    padding: 1.5rem;
+}
+.body{
+    padding: 1rem 0
+}
+
+.content img {
+    background-color: red;
+    border-radius: 100%;
+    padding: 10px;
+    width: 50px;
+    aspect-ratio: 1;
+    box-shadow: 3px 3px 0px 0px #7F7F7F;
+    margin-right: 1rem;
+    display: inline-block;
+    vertical-align: middle;
+    image-rendering: pixelated;
+
+}
+
+.content .message {
+    display: inline-block;
+    font-size: large;
+    vertical-align: middle;
+
+}
+
+footer {
+    margin-top: 1rem;
+    text-align: end;
+}
+
+button {
+    all: unset;
+    border-radius: 0%;
+    padding: 0.5rem 1.2rem;
+    border: 2px solid black;
+    border-top-color: white;
+    border-left-color: white;
+}
+
+
+
+@media (max-width: 1536px) {
+    .window {
+        max-width: 1280px;
+    }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+    .window {
+        max-width: 1024px;
+    }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .window {
+        max-width: 768px;
+    }
+}
+
+/* md */
+@media (max-width: 768px) {
+    .window {
+        max-width: 640px;
+    }
+
+    .body .message {
+
+        left: 15%;
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+
+    .window {
+        max-width: 475px;
+    }
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .window {
+        width: 100%;
+    }
+}
