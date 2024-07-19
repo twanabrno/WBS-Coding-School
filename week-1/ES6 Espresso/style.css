@@ -154,10 +154,17 @@ ul.address a:hover {
     float: left;
     text-align: center;
     position: relative;
+    height: 430px;
+}
+.right{
+    float: right;
 }
 
 .content{
-    margin-top: 6rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 
@@ -224,10 +231,7 @@ ul.address a:hover {
     .right {
         width: 100%;
         float: none;
-    }
-    .content{
-        margin-top: 3rem;
-        margin-bottom: 3rem;
+        height: 330px;
     }
 }
 
